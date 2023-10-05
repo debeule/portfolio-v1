@@ -1,0 +1,101 @@
+@import '02_atoms/stat';
+
+.inf2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: $color1;
+
+    width: 60%;
+    height: 100%;
+
+    border-radius: 0.8rem;
+
+    &__name
+    {
+        color: $color3;
+
+        margin: 0.3rem 0 0.4rem 0;
+    }
+
+    &__title-group
+    {
+        display: flex;
+        flex-direction: row;
+        
+        & img
+        {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 0rem;
+            margin: 0.2rem;
+        }
+    }
+
+    &__bar:after
+    {
+        width: 100%;
+        height: 25%;
+        background: $color3;
+    }
+    &__bar:before
+    {
+        width: 10%;
+        height: 25%;
+        background: $color3;
+    }
+    
+}
+
+.inf2-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+
+    width: 90%;
+    height: 23%;
+
+    margin: 0.5rem 0;
+    padding: 0.2rem 0.6rem;
+    background: $color4;
+    border-radius: 1rem;
+
+    & a
+    {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .inf2
+    {
+        width: 100%;
+        margin: 0.5rem 0;
+        border-radius: 0rem;
+
+        margin-top: 4rem;
+
+        padding: 2rem 0;
+
+        &-group
+        {
+            width: 100%;
+            height: 5rem;
+            margin: 0;
+            padding: 0;
+            border-radius: 0rem;
+        }
+
+        &__bar
+        {
+            border-radius: 0rem;
+            margin-left: 3rem;
+        }
+    }
+}

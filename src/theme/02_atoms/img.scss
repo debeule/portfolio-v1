@@ -1,0 +1,25 @@
+img
+{
+    width: 100%;
+    height: auto;
+
+    border-radius: 1rem;
+
+}
+
+.img__inner
+{
+    width: 80%;
+
+    & img
+    {
+        border-radius: 0rem;
+    }
+}
+
+.card__img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

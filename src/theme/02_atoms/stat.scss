@@ -1,0 +1,25 @@
+@import '01_fundaments/variables';
+  
+.inf2__bar 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color3;
+
+    height: 20%;
+
+    
+    animation: barAnimation $animation1;
+    @keyframes barAnimation
+    {
+        0%
+        {
+            width: 0%;
+        }
+        100%
+        {
+            width: var(--width);
+        }
+    }    
+}

@@ -1,0 +1,35 @@
+@import '03_molecules/icons';
+@import '03_molecules/profile';
+@import '03_molecules/nav';
+
+.container__sidebar
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 25%;
+    height: 100%;
+
+    border-radius: 0.6em;
+    box-shadow: 3px 3px 8px $color3;
+
+
+    background: $color1;
+    color: $color2;
+}
+
+@media (max-width: 1100px)
+{
+    .container__sidebar
+    {
+        position: absolute;
+        width:100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        justify-content: center;
+        z-index: 10;
+    }
+}

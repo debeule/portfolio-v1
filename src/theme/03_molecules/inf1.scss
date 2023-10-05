@@ -1,0 +1,78 @@
+@import '02_atoms/pie';
+
+.inf1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: $color4;
+
+    width: 28%;
+
+    border-radius: 5%;
+
+    &__name
+    {
+        color: $color3;
+
+        margin: 0.3rem 0 0.4rem 0;
+    }
+
+    &__img
+    {
+        width: 5vw;
+        height: 85%;
+        border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        & img
+        {
+            width: 75%;
+            padding: 0.2rem 0;
+            border: 0;
+            border-radius: .5rem;
+        }
+    }
+    
+}
+
+.pie-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    padding: 0.2rem 0.6rem;
+    background: $color1;
+    border-radius: 10%;
+}
+
+@media (max-width: 1100px)
+{
+    .inf1
+    {
+        width: 100%;
+        margin: 0.5rem 0;
+        border-radius: 0rem;
+
+        &__img
+        {
+            width: 5rem;
+        }
+    }
+
+    .pie-group
+    {
+        width: 30vw;
+    }
+
+}

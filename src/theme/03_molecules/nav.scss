@@ -1,0 +1,47 @@
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & nav
+    {
+        width: 100%;
+        border-radius: 1.4rem;
+        text-align: center;
+        margin: 8rem 0 1rem 0;
+
+        padding: 1rem 0;
+        background: $color4;
+
+        & ul
+        {
+            & li
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                text-transform: uppercase;
+                cursor: pointer;
+                height: 1.8rem;
+
+                &:hover
+                {
+                    background: $color1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px)
+{
+    header
+    {
+        & nav
+        {
+            border-radius: 0rem;
+        }
+    }
+}

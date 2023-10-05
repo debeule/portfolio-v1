@@ -1,0 +1,172 @@
+@import '02_atoms/img';
+@import '01_fundaments/variables';
+@import '03_molecules/content';
+@import '03_molecules/links';
+
+.card
+{
+    display: flex;
+    
+    margin: 3rem 0 3.5rem 0;
+
+    &__img
+    {
+        width: 25%;
+
+        border-radius: 1rem 0 0 1rem;
+        background: $color4;
+
+    }
+
+    &__middle
+    {
+        padding: 0.4rem;
+        width: 60%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        background-color: $color3;
+    }
+
+    &__tags
+    {
+        margin: 0.4rem 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__links
+    {
+        width: 15%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 0  1rem 1rem 0;
+        background: $color4;
+
+        
+    }
+
+    &__p
+    {
+        width: 75%;
+        margin: auto;
+
+        padding-top: 0.3rem;
+        border-top: 2px solid $color4;
+
+        text-align: center;
+        opacity: 0.5;
+    }
+}
+
+.links__button
+{
+    margin: 0.4rem 0rem;  
+    cursor: pointer;
+}
+
+.card__tag
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6rem;
+    height: 2rem;
+    margin: 0.4rem 0.2rem;
+
+    border-radius: 0.4rem;
+    background: $color1;
+    box-shadow: 0.1rem 0.1rem 0.2rem $color3;
+    color: $color2; 
+
+    text-transform: capitalize;
+}
+
+.inactive{
+    display: none;
+}
+
+.img__inner img
+{
+    border-radius: 0rem;
+}
+
+@media (max-width: 1100px)
+{
+    .tab__cards
+    {
+        width: 100%;
+    }
+
+    .card
+    {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 0rem;
+
+        &__img
+        {
+            width: 100%;
+            height: 10rem;
+
+            border-radius: 1rem 1rem 0rem 0rem;
+
+            & img
+            {
+                height: 20%;
+                width:auto;
+            }
+        }
+
+        &__middle
+        {
+            width: 95%;
+
+            border-radius: 0 0 0 0;
+
+            margin: 1rem 0;
+            padding: 0;
+        }
+
+        &__links
+        {
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+
+            border-radius: 0rem 0rem 1rem 1rem;
+
+            padding: 0.4rem 0;
+        }
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .img__inner
+    {
+        height: 20vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img
+        {
+            height: 75%;
+            width: auto;
+        }
+    }
+}

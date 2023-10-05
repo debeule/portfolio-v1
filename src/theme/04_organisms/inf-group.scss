@@ -1,0 +1,60 @@
+@import '03_molecules/inf1';
+@import '03_molecules/inf2';
+@import '03_molecules/inf3';
+
+.inf-group
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 95%;
+    height: fit-content;
+
+    margin-top: 2rem;
+}
+
+.inf-mid
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h2
+    {
+        letter-spacing: 0.6rem;
+        word-spacing: 1rem;
+
+        margin-bottom: 0.2rem;
+    }
+    
+}
+
+@media (max-width: 1100px)
+{
+    header
+    {
+        & nav
+        {
+            border-radius: 0rem;
+        }
+    }
+
+    .inf-group
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .inf-mid
+    {
+        margin: 4rem 0;
+    }
+}

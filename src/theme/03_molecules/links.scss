@@ -1,0 +1,27 @@
+@import '01_fundaments/variables';
+
+.links
+{
+    height: 100%;
+    width: 100%;
+
+    &__button
+    {
+        width: 55%;
+
+        border-radius: 10px 10px 10px 10px;
+        
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .links
+    {
+        
+        &__button
+        {
+            width: 12%;
+        }
+    }
+}

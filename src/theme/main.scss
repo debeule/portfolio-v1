@@ -1,0 +1,20 @@
+
+
+@import "00_common/globals";
+@import "00_common/reset";
+@import "01_fundaments/variables";
+@import "01_fundaments/typography";
+
+@import "06_pages/main";
+@import "06_pages/skills";
+@import "06_pages/about";
+
+@import "03_molecules/mob-menu";
+@import "06_pages/portfolio";
+
+
+@media (max-width: 1100px)
+{
+    
+    
+}
